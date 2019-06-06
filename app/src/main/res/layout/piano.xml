@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/llKeys"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="5"
+        android:orientation="vertical"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/btPanioOne"
+            android:layout_height="10dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/white1"
+ />
+        <Button
+            android:id="@+id/btPanioTwo"
+            android:layout_height="10dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/white2"
+ />
+
+        <Button
+            android:id="@+id/btPanioThree"
+            android:layout_height="10dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/white3"
+ />
+
+        <Button
+            android:id="@+id/btPanioFour"
+            android:layout_height="10dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/white4"
+/>
+
+        <Button
+            android:id="@+id/btPanioFive"
+            android:layout_height="10dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/white5"
+ />
+
+        <Button
+            android:id="@+id/btPanioSix"
+            android:layout_height="10dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/white6"
+ />
+
+        <Button
+            android:id="@+id/btPanioSeven"
+            android:layout_height="10dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/white7"
+/>
+    </LinearLayout>
+
+</LinearLayout>
