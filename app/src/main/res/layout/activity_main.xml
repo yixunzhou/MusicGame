@@ -20,8 +20,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Piano"
-        tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="63dp" />
+        tools:layout_editor_absoluteX="206dp"
+        tools:layout_editor_absoluteY="203dp" />
 
     <Button
         android:id="@+id/nineButton"

@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         nineButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, NineButtonActivity.class);
+                Intent intent = new Intent(MainActivity.this, PianoActivity.class);
                 startActivity(intent);
             }
         });

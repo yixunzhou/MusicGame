@@ -28,13 +28,13 @@ public class PianoActivity extends AppCompatActivity {
         mBtnmusic7 = findViewById(R.id.btPanioSeven);
 
 
-        mp6 = MediaPlayer.create(this, R.raw.a);//创建MediaPlayer音频
-        mp1=MediaPlayer.create(this,R.raw.ba);
-        mp2=MediaPlayer.create(this,R.raw.be);
-        mp3=MediaPlayer.create(this,R.raw.bo);
-        mp4 = MediaPlayer.create(this, R.raw.bu);
-        mp5 = MediaPlayer.create(this, R.raw.sa);
-        mp7 = MediaPlayer.create(this, R.raw.se);
+        mp6 = MediaPlayer.create(this, R.raw.lemon);//创建MediaPlayer音频
+        mp1=MediaPlayer.create(this,R.raw.lemon);
+        mp2=MediaPlayer.create(this,R.raw.lemon);
+        mp3=MediaPlayer.create(this,R.raw.lemon);
+        mp4 = MediaPlayer.create(this, R.raw.lemon);
+        mp5 = MediaPlayer.create(this, R.raw.lemon);
+        mp7 = MediaPlayer.create(this, R.raw.lemon);
         mp= MediaPlayer.create(this, R.raw.lemon);
         //调用声音
         am = (AudioManager) this.getSystemService(Context.AUDIO_SERVICE);
