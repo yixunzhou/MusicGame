@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-public class Piano2 extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
     private Button mBtnmusic, mBtnmusic1, mBtnmusic2, mBtnmusic3,mBtnmusic4,mBtnmusic5,mBtnmusic6,mBtnmusic7;
     private MediaPlayer mp1, mp3, mp2,mp4,mp5,mp6,mp7,mp; //MediaPlayer引用
     private AudioManager am;//AudioManager引用
@@ -28,13 +28,13 @@ public class Piano2 extends AppCompatActivity {
         mBtnmusic7 = findViewById(R.id.btPanioSeven);
 
 
-        mp6 = MediaPlayer.create(this, R.raw.a);//创建MediaPlayer音频
-        mp1=MediaPlayer.create(this,R.raw.ba);
-        mp2=MediaPlayer.create(this,R.raw.be);
-        mp3=MediaPlayer.create(this,R.raw.bo);
-        mp4 = MediaPlayer.create(this, R.raw.bu);
-        mp5 = MediaPlayer.create(this, R.raw.sa);
-        mp7 = MediaPlayer.create(this, R.raw.se);
+        mp6 = MediaPlayer.create(this, R.raw.slow6);//创建MediaPlayer音频
+        mp1=MediaPlayer.create(this,R.raw.slow1);
+        mp2=MediaPlayer.create(this,R.raw.slow2);
+        mp3=MediaPlayer.create(this,R.raw.slow3);
+        mp4 = MediaPlayer.create(this, R.raw.slow4);
+        mp5 = MediaPlayer.create(this, R.raw.slow5);
+        mp7 = MediaPlayer.create(this, R.raw.slow7);
         mp= MediaPlayer.create(this, R.raw.lemon);
         //调用声音
         am = (AudioManager) this.getSystemService(Context.AUDIO_SERVICE);
@@ -119,8 +119,8 @@ public class Piano2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mp3.start();
-                if(mp6.isPlaying()){
-                    mp6.pause();
+                if(mp1.isPlaying()){
+                    mp1.pause();
                 }
                 if(mp2.isPlaying()){
                     mp2.pause();
@@ -143,8 +143,8 @@ public class Piano2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mp5.start();
-                if(mp6.isPlaying()){
-                    mp6.pause();
+                if(mp1.isPlaying()){
+                    mp1.pause();
                 }
                 if(mp2.isPlaying()){
                     mp2.pause();
@@ -167,8 +167,8 @@ public class Piano2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mp6.start();
-                if(mp6.isPlaying()){
-                    mp6.pause();
+                if(mp1.isPlaying()){
+                    mp1.pause();
                 }
                 if(mp2.isPlaying()){
                     mp2.pause();
@@ -191,8 +191,8 @@ public class Piano2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 mp7.start();
-                if(mp6.isPlaying()){
-                    mp6.pause();
+                if(mp1.isPlaying()){
+                    mp1.pause();
                 }
                 if(mp2.isPlaying()){
                     mp2.pause();
