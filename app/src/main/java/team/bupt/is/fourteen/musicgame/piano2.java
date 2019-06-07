@@ -8,7 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class Piano2 extends AppCompatActivity {
     private Button mBtnmusic, mBtnmusic1, mBtnmusic2, mBtnmusic3,mBtnmusic4,mBtnmusic5,mBtnmusic6,mBtnmusic7;
     private MediaPlayer mp1, mp3, mp2,mp4,mp5,mp6,mp7,mp; //MediaPlayer引用
     private AudioManager am;//AudioManager引用
