@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity"></activity>
-        <activity android:name=".PianoActivity"></activity>
+        <activity android:name=".Piano2Activity"></activity>
+        <activity android:name=".KichikuActivity"></activity>
     </application>
 
 </manifest>

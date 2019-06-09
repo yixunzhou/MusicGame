@@ -1,34 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context=".MainActivity"
+        android:id="@+id/right"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:orientation="vertical"
+        android:gravity="center|center_horizontal|center_vertical"
+        android:background="@drawable/homescreen">
 
     <Button
-        android:id="@+id/pianoButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Piano"
-        tools:layout_editor_absoluteX="206dp"
-        tools:layout_editor_absoluteY="203dp" />
+            android:id="@+id/pianoButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="30dp"
+            android:layout_marginLeft="0dp"
+            android:text="piano"
+            android:textSize="30dp"
+            android:background="#00000000"/>
 
-    <Button
-        android:id="@+id/nineButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="鬼畜"
-        tools:layout_editor_absoluteX="136dp"
-        tools:layout_editor_absoluteY="157dp" />
+        <Button
+            android:id="@+id/kichikuButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="30dp"
+            android:layout_marginLeft="0dp"
+            android:text="kichiku"
+            android:textSize="30dp"
+            android:background="#00000000"/>
 
-</android.support.constraint.ConstraintLayout>
+
+    </LinearLayout>
+

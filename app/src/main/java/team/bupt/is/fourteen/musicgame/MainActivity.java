@@ -9,7 +9,7 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     private Button piano;
-    private Button nineButton;
+    private Button kichiku;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,20 +17,20 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         piano = findViewById(R.id.pianoButton);
-        nineButton = findViewById(R.id.nineButton);
+        kichiku = findViewById(R.id.kichikuButton);
 
         piano.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, PianoActivity.class);// 你的类命名为PianoActivity.java,别忘了在manifest里注册
+                Intent intent = new Intent(MainActivity.this, Piano2Activity.class);
                 startActivity(intent);
             }
         });
 
-        nineButton.setOnClickListener(new View.OnClickListener() {
+        kichiku.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, PianoActivity.class);
+                Intent intent = new Intent(MainActivity.this, KichikuActivity.class);
                 startActivity(intent);
             }
         });
