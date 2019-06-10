@@ -1,4 +1,4 @@
-package team.bupt.is.fourteen.musicgame;
+package com.example.win10.piano;
 
 import android.content.Context;
 import android.media.AudioManager;
@@ -269,6 +269,9 @@ public class KichikuActivity extends AppCompatActivity {
                 if (!mp.isPlaying()){
                     mp.start();
                 }
+                else{
+                    mp.pause();
+                }
             }
         });
     }
@@ -283,6 +286,7 @@ public class KichikuActivity extends AppCompatActivity {
         mp5.release();
         mp6.release();
         mp7.release();
+        mp.release();
     }
 }
 

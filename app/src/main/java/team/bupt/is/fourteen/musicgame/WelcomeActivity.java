@@ -1,12 +1,11 @@
-package team.bupt.is.fourteen.musicgame;
+package com.example.win10.piano;
 
 import android.app.Activity;
-import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.support.annotation.Nullable;
 import android.view.Window;
 import android.view.WindowManager;
 

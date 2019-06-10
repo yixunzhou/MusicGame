@@ -1,4 +1,4 @@
-package team.bupt.is.fourteen.musicgame;
+package com.example.win10.piano;
 
 import android.content.Context;
 import android.media.AudioManager;
@@ -28,13 +28,13 @@ public class PianoActivity extends AppCompatActivity {
         mBtnmusic7 = findViewById(R.id.btPanioSeven);
 
 
-        mp6 = MediaPlayer.create(this, R.raw.lemon);//创建MediaPlayer音频
-        mp1=MediaPlayer.create(this,R.raw.lemon);
-        mp2=MediaPlayer.create(this,R.raw.lemon);
-        mp3=MediaPlayer.create(this,R.raw.lemon);
-        mp4 = MediaPlayer.create(this, R.raw.lemon);
-        mp5 = MediaPlayer.create(this, R.raw.lemon);
-        mp7 = MediaPlayer.create(this, R.raw.lemon);
+        mp6 = MediaPlayer.create(this, R.raw.slow6);//创建MediaPlayer音频
+        mp1=MediaPlayer.create(this,R.raw.slow1);
+        mp2=MediaPlayer.create(this,R.raw.slow2);
+        mp3=MediaPlayer.create(this,R.raw.slow3);
+        mp4 = MediaPlayer.create(this, R.raw.slow4);
+        mp5 = MediaPlayer.create(this, R.raw.slow5);
+        mp7 = MediaPlayer.create(this, R.raw.slow7);
         mp= MediaPlayer.create(this, R.raw.lemon);
         //调用声音
         am = (AudioManager) this.getSystemService(Context.AUDIO_SERVICE);
@@ -45,44 +45,183 @@ public class PianoActivity extends AppCompatActivity {
         mBtnmusic4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mp4.start();
-            }
+                        mp4.start();
+                        if(mp1.isPlaying()){
+                            mp1.pause();
+                        }
+                if(mp2.isPlaying()){
+                    mp2.pause();
+                }
+                if(mp3.isPlaying()){
+                    mp3.pause();
+                }
+                if(mp6.isPlaying()){
+                    mp6.pause();
+                }
+                if(mp5.isPlaying()){
+                    mp5.pause();
+                }
+                if(mp7.isPlaying()){
+                    mp7.pause();
+                }
+                }
         });
         mBtnmusic1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                mp1.start();
-            }
+                        mp1.start();
+                if(mp6.isPlaying()){
+                    mp6.pause();
+                }
+                if(mp2.isPlaying()){
+                    mp2.pause();
+                }
+                if(mp3.isPlaying()){
+                    mp3.pause();
+                }
+                if(mp4.isPlaying()){
+                    mp4.pause();
+                }
+                if(mp5.isPlaying()){
+                    mp5.pause();
+                }
+                if(mp7.isPlaying()){
+                    mp7.pause();
+                }
+                }
         });
         mBtnmusic2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mp2.start();
+                if(mp1.isPlaying()){
+                    mp1.pause();
+                }
+                if(mp6.isPlaying()){
+                    mp6.pause();
+                }
+                if(mp3.isPlaying()){
+                    mp3.pause();
+                }
+                if(mp4.isPlaying()){
+                    mp4.pause();
+                }
+                if(mp5.isPlaying()){
+                    mp5.pause();
+                }
+
+                if(mp7.isPlaying()){
+                    mp7.pause();
+                }
             }
         });
         mBtnmusic3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mp3.start();
+                if(mp1.isPlaying()){
+                    mp1.pause();
+                }
+                if(mp2.isPlaying()){
+                    mp2.pause();
+                }
+                if(mp6.isPlaying()){
+                    mp6.pause();
+                }
+                if(mp4.isPlaying()){
+                    mp4.pause();
+                }
+                if(mp5.isPlaying()){
+                    mp5.pause();
+                }
+                if(mp7.isPlaying()){
+                    mp7.pause();
+                }
             }
         });
         mBtnmusic5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mp5.start();
+                if(mp1.isPlaying()){
+                    mp1.pause();
+                }
+                if(mp2.isPlaying()){
+                    mp2.pause();
+                }
+                if(mp3.isPlaying()){
+                    mp3.pause();
+                }
+                if(mp4.isPlaying()){
+                    mp4.pause();
+                }
+                if(mp6.isPlaying()){
+                    mp6.pause();
+                }
+                if(mp7.isPlaying()){
+                    mp7.pause();
+                }
             }
         });
         mBtnmusic6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mp6.start();
+                if(mp1.isPlaying()){
+                    mp1.pause();
+                }
+                if(mp2.isPlaying()){
+                    mp2.pause();
+                }
+                if(mp3.isPlaying()){
+                    mp3.pause();
+                }
+                if(mp4.isPlaying()){
+                    mp4.pause();
+                }
+                if(mp5.isPlaying()){
+                    mp5.pause();
+                }
+                if(mp7.isPlaying()){
+                    mp7.pause();
+                }
             }
         });
         mBtnmusic7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 mp7.start();
+                if(mp1.isPlaying()){
+                    mp1.pause();
+                }
+                if(mp2.isPlaying()){
+                    mp2.pause();
+                }
+                if(mp3.isPlaying()){
+                    mp3.pause();
+                }
+                if(mp4.isPlaying()){
+                    mp4.pause();
+                }
+                if(mp5.isPlaying()){
+                    mp5.pause();
+                }
+                if(mp6.isPlaying()){
+                    mp6.pause();
+                }
             }
         });
+    }
+    //重写onStop,当piano界面完全被覆盖释放mp
+    @Override
+    protected void onStop() {
+        super.onStop();
+        mp1.release();
+        mp2.release();
+        mp3.release();
+        mp4.release();
+        mp5.release();
+        mp6.release();
+        mp7.release();
     }
 }
