@@ -1,38 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center|center_horizontal|center_vertical"
+    android:background="@drawable/moh">
     <LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         tools:context=".MainActivity"
         android:id="@+id/right"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="10"
         android:orientation="vertical"
-        android:gravity="center|center_horizontal|center_vertical"
-        android:background="@drawable/homescreen">
+        android:layout_width="350dp"
+        android:layout_height="450dp"
+        android:gravity="center|center_horizontal|center_vertical">
 
-    <Button
+
+        <TextView
+            android:id="@+id/id_NsimsunForView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:text="Music App"
+            android:textAllCaps="false"
+            android:textSize="30sp"
+            android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="@drawable/shape"
+        android:layout_marginBottom="50dp"
+        >
+        <Button
             android:id="@+id/pianoButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/piano"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:gravity="center|center_vertical"
+            />
+        <TextView
+            android:id="@+id/piano"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="30dp"
-            android:layout_marginLeft="0dp"
-            android:text="piano"
-            android:textSize="30dp"
-            android:background="#00000000"/>
-
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:textSize="28sp"
+            android:text="Piano"
+            android:gravity="center|center_vertical"
+            android:textColor="#000000"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="170dp"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:background="@drawable/shape">
         <Button
             android:id="@+id/kichikuButton"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/reddit"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="5dp"
+            android:gravity="center|center_vertical"
+            />
+        <TextView
+            android:id="@+id/kichuku"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginVertical="30dp"
-            android:layout_marginLeft="0dp"
-            android:text="kichiku"
-            android:textSize="30dp"
-            android:background="#00000000"/>
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:textSize="28sp"
+            android:text="Kichiku"
+            android:gravity="center|center_vertical"
+            android:textColor="#000000"/>
+    </LinearLayout>
+
 
 
     </LinearLayout>
-
+</LinearLayout>
