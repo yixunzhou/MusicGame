@@ -1,5 +1,4 @@
-package com.example.win10.piano;
-
+package team.bupt.is.fourteen.musicgame;
 import android.content.Context;
 import android.media.AudioManager;
 import android.media.MediaPlayer;

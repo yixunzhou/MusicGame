@@ -1,4 +1,4 @@
-package com.example.win10.piano;
+package team.bupt.is.fourteen.musicgame;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Intent intent = new Intent(MainActivity.this, PianoActivity.class);
-                Intent intt=new Intent(MainActivity.this,PianoActivity.class);
+                Intent intt=new Intent(MainActivity.this, Piano2Activity.class);
                 startActivity(intt);
             }
         });
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //Intent intent = new Intent(MainActivity.this, PianoActivity.class);
-                Intent intt=new Intent(MainActivity.this,PianoActivity.class);
+                Intent intt=new Intent(MainActivity.this,Piano2Activity.class);
                 startActivity(intt);
             }
         });

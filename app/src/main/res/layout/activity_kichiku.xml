@@ -15,22 +15,22 @@
             android:id="@+id/button1"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:text="Button1"
-            android:background="#00000000"/>
+            android:text=""
+            android:background="@drawable/shape2"/>
 
         <Button
             android:id="@+id/button4"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:text="Button4"
-            android:background="#00000000"/>
+            android:text=""
+            android:background="@drawable/shape2"/>
 
         <Button
             android:id="@+id/button6"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:text="Button6"
-            android:background="#00000000"/>
+            android:text=""
+            android:background="@drawable/shape2"/>
     </LinearLayout>
 
     <LinearLayout
@@ -43,22 +43,22 @@
             android:id="@+id/button2"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:text="Button2"
-            android:background="#00000000"/>
+            android:text=""
+            android:background="@drawable/shape2"/>
 
         <Button
             android:id="@+id/bgmButton"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:text="Background Music"
-            android:background="#00000000"/>
+            android:background="@drawable/shape2"/>
 
         <Button
             android:id="@+id/button7"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:text="Button7"
-            android:background="#00000000"/>
+            android:text=""
+            android:background="@drawable/shape2"/>
     </LinearLayout>
 
     <LinearLayout
@@ -71,22 +71,22 @@
             android:id="@+id/button3"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:text="Button3"
-            android:background="#00000000"/>
+            android:text=""
+            android:background="@drawable/shape2"/>
 
         <Button
             android:id="@+id/button5"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:text="Button5"
-            android:background="#00000000"/>
+            android:text=""
+            android:background="@drawable/shape2"/>
 
         <Button
             android:id="@+id/button8"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:text="Button8"
-            android:background="#00000000"/>
+            android:text=""
+            android:background="@drawable/shape2"/>
     </LinearLayout>
 
 </LinearLayout>
